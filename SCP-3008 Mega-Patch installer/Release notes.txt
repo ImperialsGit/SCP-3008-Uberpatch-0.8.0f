@@ -1,0 +1,19 @@
+Version 0.1: "Ladies and gentlemen, i present to you the fruit of 2 seasons labour, The unofficial SCP-3008 Mega-Patch (for free version). This launcher (and within, mod), allows you to load custom Items with full save/load support, and automatically launches into -devcmd mode (can be circumvented by launching from the TGLaucher). There are also some performance enhancements for the base game. It also has a better hook handler, for those who are programatically inclined, you will find instance checking a thing of the past. Unfortunately, installing mods will still have to be done manually."
+
+Version 0.2: "Will actually install things properly now! Also adds support for recipes, Recipes can be made by writing a standard text document by the same name as your itemSO, with no extension. Use the name of the required resource, and then the number required, separated by '|' (the shift of '\')"
+
+Version 0.3: "Bit of optimization here and there, fixed worldgen so saving and loading retains the FurnitureWallMode settings. Said settings are no longer inverted aswell."
+
+Version 0.4: "Includes a handler for custom object code, added this file, added other tutorials, added 4 more hooks, etc."
+
+Version 0.5: "Fixed the bug that Battleforge found :)"
+
+Version 0.6: "Made worldgen a bit more optimized and gave some items scrapability. Few more optimizations with the Day/Night cycle and others. Fixed potential bugs with the ItemLoader class. Made staff de-agro at day. Removed dart mines. Made zoom a toggle"
+
+Version 0.7: "Alot more optimizations, more bugfixes, fixed the sprint-carry bug, fixed the day-night cycle problem, added more hooks. (see "Making your own mods\README.txt" for full list). Somehow managed to make the .dll smaller? Added confirmation dialogues to installer."
+
+Version 0.8: "More updates, yay??? Dunno how you people feel about so many updates but I think it's worth it. Added the "MSTarget" script, makes moddedScript handling alot simpler. More optimizations and stuff, more fixes, maybe possibly one of the last updates? Iunno, we'll see what comes up. Oh and funny MOTD now"
+
+Version 0.9: "Windows' .Net documentation was not as good as I thought, turns out the decompression code they had wasn't up to par. I think I got it working well enough? If not, just manually install mods for now. The installer should work properly now. Also added logs to the installer, which is always epic." 
+
+Version 1.0: "This version is the meat 'n' potatoes. Adds Configs support. Look in the "Making your own mods" folder's README.txt for more informtion on that. Stripped ~100 kb off the Assembly-CSHarp by removing some unneeded VP_ scripts. Consequently, game runs even better now! Less RAM use, quicker load times, etc etc. Fixed some bugs that existed somewhere, I think. Oh, and I fixed/improved the installer even more. Should handle versioning, logging, user experience just better in general now."
