@@ -17,3 +17,5 @@ Version 0.8: "More updates, yay??? Dunno how you people feel about so many updat
 Version 0.9: "Windows' .Net documentation was not as good as I thought, turns out the decompression code they had wasn't up to par. I think I got it working well enough? If not, just manually install mods for now. The installer should work properly now. Also added logs to the installer, which is always epic." 
 
 Version 1.0: "This version is the meat 'n' potatoes. Adds Configs support. Look in the "Making your own mods" folder's README.txt for more informtion on that. Stripped ~100 kb off the Assembly-CSHarp by removing some unneeded VP_ scripts. Consequently, game runs even better now! Less RAM use, quicker load times, etc etc. Fixed some bugs that existed somewhere, I think. Oh, and I fixed/improved the installer even more. Should handle versioning, logging, user experience just better in general now."
+
+Version 1.1: "Fixed the installer, I did a dummy. Also stripped down the DLL size a slight bit more"
