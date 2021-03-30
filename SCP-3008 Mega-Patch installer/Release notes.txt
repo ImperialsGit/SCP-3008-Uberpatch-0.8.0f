@@ -19,3 +19,5 @@ Version 0.9: "Windows' .Net documentation was not as good as I thought, turns ou
 Version 1.0: "This version is the meat 'n' potatoes. Adds Configs support. Look in the "Making your own mods" folder's README.txt for more informtion on that. Stripped ~100 kb off the Assembly-CSHarp by removing some unneeded VP_ scripts. Consequently, game runs even better now! Less RAM use, quicker load times, etc etc. Fixed some bugs that existed somewhere, I think. Oh, and I fixed/improved the installer even more. Should handle versioning, logging, user experience just better in general now."
 
 Version 1.1: "Fixed the installer, I did a dummy. Also stripped down the DLL size a slight bit more"
+
+Version 1.2: "Stopped dll from creating directories in root. Sorry about that! Fixed the installer breaking on fresh installs. Further stripped unused code. Made ItemLoader able to import DLLs."
