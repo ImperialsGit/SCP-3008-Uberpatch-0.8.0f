@@ -21,3 +21,5 @@ Version 1.0: "This version is the meat 'n' potatoes. Adds Configs support. Look 
 Version 1.1: "Fixed the installer, I did a dummy. Also stripped down the DLL size a slight bit more"
 
 Version 1.2: "Stopped dll from creating directories in root. Sorry about that! Fixed the installer breaking on fresh installs. Further stripped unused code. Made ItemLoader able to import DLLs."
+
+Version 1.2.1: "Fixed ItemLoader not loading properly."
