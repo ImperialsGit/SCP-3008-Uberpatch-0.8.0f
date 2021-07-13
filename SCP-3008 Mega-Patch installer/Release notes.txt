@@ -25,3 +25,5 @@ Version 1.2: "Stopped dll from creating directories in root. Sorry about that! F
 Version 1.2.1: "Fixed ItemLoader not loading properly."
 
 Version 1.2.2: "Fixed hook ordering."
+
+Version 1.3: "Literally no clue what all I did. But it's better (trust me) (hopefully)"
