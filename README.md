@@ -1,4 +1,5 @@
-# SCP-3008-Megapatch
+# SCP-3008-Uberpatch-0.8.0f
+(note the namechange from Megapatch)
 A repository for all the files needed to transform SCP-3008
 
 You MUST have SCP-3008 FREE installed before running the Megapatch installer, otherwise it won't work.
