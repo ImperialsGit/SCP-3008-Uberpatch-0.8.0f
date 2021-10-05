@@ -35,3 +35,5 @@ Sudo Version 1.4: Renamed the project to the Uberpatch, along with the official 
 Version 2.0: "Gave up on semantic versioning cus I really couldn't care enough. Added custom Isle support, fixed picking up objects killing the game, more optimizations, better dart logic, and fixed placing objects. Also cut down dll size a bit more somehow, expanded MSHost capability"
 
 Version 2.1: "Added a few more mods, added translation controls to the installer"
+
+Version 2.2: "Fixed the installer breaking when using Install IL Mods"
