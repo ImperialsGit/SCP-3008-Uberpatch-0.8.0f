@@ -32,4 +32,6 @@ Version 1.3.1: "Fixed the day/night cycle"
 
 Sudo Version 1.4: Renamed the project to the Uberpatch, along with the official change to a "fork", since the game is 2 years dead at this point, it's basically an update. This just sounds better, too.
 
-Version 2.0: "Gave up on semantic versioning cus I really couldn't care enough. Added custom Isle support, fixed picking up objects killing the game, more optimizations, better dart logic, and fixed placing objects. Also cut down dll size a bit more somehow, expanded MSHost capability" 
+Version 2.0: "Gave up on semantic versioning cus I really couldn't care enough. Added custom Isle support, fixed picking up objects killing the game, more optimizations, better dart logic, and fixed placing objects. Also cut down dll size a bit more somehow, expanded MSHost capability"
+
+Version 2.1: "Added a few more mods, added translation controls to the installer"
