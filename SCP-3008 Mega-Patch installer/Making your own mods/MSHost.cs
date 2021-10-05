@@ -174,4 +174,18 @@ public class MSHost : MonoBehaviour
 		}
 		return File.ReadAllLines(ItemLoader.Dir + "/Recipes/Special/" + RecipeName);
 	}
+
+	public static string[] GetFiles(string DirName)
+	{
+		if (DirName.Contains(".."))
+		{
+			return null;
+		}
+		string[] files = Directory.GetFiles(ItemLoader.Dir + "/Recipes/Special/" + DirName);
+		for (int i = 0; i < files.Length; i++)
+		{
+			files[i] = files[i].Remove(0, ItemLoader.Dir.Length + 17 + DirName.Length);
+		}
+		return files;
+	}
 }

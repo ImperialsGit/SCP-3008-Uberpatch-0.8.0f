@@ -73,7 +73,7 @@ Recipe files can also be read by using the LoadRecipeArray function in the MSHos
 
 The "Overrides" folder allows you to modify recipies, modded or default. They work the same way as normal recipies otherwise.
 
-
+If you're making complex systems whose scripts depend on eachother, It is recommended that you split each class into a new ClassesToCompile entry, and enable the Aggregate bool.  
 
 Line 78: To add custom scripts to an item, add the ModdedScript component. Write code in the ClassesToCompile string array. It will be compiled before the Override files are loaded.
 Added a MSTarget to the ItemSO.FPItem's gameObject IF the ModdedScript component is not on that object. ModdedScript strings are compiled directly to the gameObject the ModdedScript is on.
@@ -82,3 +82,6 @@ Added a MSTarget to the ItemSO.FPItem's gameObject IF the ModdedScript component
 Configs can be created using the WriteFullConfig and WriteConfigLine methods, in the MSHost class. You can load config data either by making your own iterator and using the LoadConfig function, or using an interger with the LoadConfigLine function.
 MSHost also contains FileExists and DirectoryExists functions.
 These functions WILL NOT ALLOW the use of .. in their inputs
+
+Cusotm Isles are made very simlarly to a normal modded object. The main difference is that they're placed in the SCP-3008_Data/StreamingAssets/AssetBundles/{NormalIsles, MiniIsles} folders. Which one depends on what isle type it is. It's best to experiment when it comes to proportions here.
+Shouldn't be too difficult to get one working, as long as it's placed properly in both testing, that being the proper NormalIsles vs MiniIsles folders, and in export, that being in "StreamingAssets/AssetBundles/{NormalIsles, MiniIsles}"
