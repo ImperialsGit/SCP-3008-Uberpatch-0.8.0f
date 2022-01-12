@@ -13,6 +13,7 @@ public class AllComponents : MonoBehaviour
                 {
                     TGLogger.Log(C.ToString());
                 }
+                TGLogger.Log("\r\n Children \r\n");
                 foreach(Component C in hit.transform.GetComponentsInChildren<Component>())
                 {
                     TGLogger.Log(C.ToString());

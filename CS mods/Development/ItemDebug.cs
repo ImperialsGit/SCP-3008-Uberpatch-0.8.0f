@@ -1,18 +1,21 @@
 using UnityEngine;
 using System.IO;
 //DELCLHOOKWORLDGENERATED
+//HOOK:WORLDGENERATED
 public class ItemDebug : MonoBehaviour
 {
+    public static ItemDebug ID;
     int num, i;
     bool running, co, returned;
     void Awake()
     {
-        if(GameObject.Find("ID"))
+        if(ID != null)
         {
             Destroy(gameObject);
             return;
         }
         gameObject.name = "ID";
+        ID = this;
         TGLogger.Log("Instanced ItemDebug!");
     }
     void List()
@@ -27,16 +30,7 @@ public class ItemDebug : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.RightControl))
         {
-            if(!co)
-            {
-                if(!running)
-                {
-                    co = true;
-                    List();
-                    StartCoroutine(KeyReg());
-                }
-            }
-            else
+            if(co)
             {
                 co = false;
                 StopAllCoroutines();
@@ -44,6 +38,15 @@ public class ItemDebug : MonoBehaviour
                 returned = false;
                 num = 0;
                 i = 0;
+            }
+            else
+            {
+                if(!running)
+                {
+                    ID.co = true;
+                    ID.List();
+                    ID.StartCoroutine(KeyReg());
+                }
             }
         }
     }
@@ -72,20 +75,20 @@ public class ItemDebug : MonoBehaviour
     }
     System.Collections.IEnumerator CheckKey()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha0) || Input.GetKeyDown(KeyCode.Keypad0))   {set('0');}
-        else if(Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1))   {set('1');}
-        else if(Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))   {set('2');}
-        else if(Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))   {set('3');}
-        else if(Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4))   {set('4');}
-        else if(Input.GetKeyDown(KeyCode.Alpha5) || Input.GetKeyDown(KeyCode.Keypad5))   {set('5');}
-        else if(Input.GetKeyDown(KeyCode.Alpha6) || Input.GetKeyDown(KeyCode.Keypad6))   {set('6');}
-        else if(Input.GetKeyDown(KeyCode.Alpha7) || Input.GetKeyDown(KeyCode.Keypad7))   {set('7');}
-        else if(Input.GetKeyDown(KeyCode.Alpha8) || Input.GetKeyDown(KeyCode.Keypad8))   {set('8');}
-        else if(Input.GetKeyDown(KeyCode.Alpha9) || Input.GetKeyDown(KeyCode.Keypad9))   {set('9');}
+        if(Input.GetKeyDown(KeyCode.Alpha0)) set(0);
+        else if(Input.GetKeyDown(KeyCode.Alpha1)) set(1);
+        else if(Input.GetKeyDown(KeyCode.Alpha2)) set(2);
+        else if(Input.GetKeyDown(KeyCode.Alpha3)) set(3);
+        else if(Input.GetKeyDown(KeyCode.Alpha4)) set(4);
+        else if(Input.GetKeyDown(KeyCode.Alpha5)) set(5);
+        else if(Input.GetKeyDown(KeyCode.Alpha6)) set(6);
+        else if(Input.GetKeyDown(KeyCode.Alpha7)) set(7);
+        else if(Input.GetKeyDown(KeyCode.Alpha8)) set(8);
+        else if(Input.GetKeyDown(KeyCode.Alpha9)) set(9);
         else if(Input.GetKeyDown(KeyCode.Return))   {i = int.MaxValue; returned = true; yield break;}
         yield return new WaitForEndOfFrame();
         StartCoroutine(CheckKey());
         yield break;
     }
-    void set(char input) => num = int.Parse(num.ToString() + input);
+    void set(int input) => num = (num*10) + input;
 }
