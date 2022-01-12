@@ -1,4 +1,4 @@
-Relations and HowTo
+# Relations and HowTo
 
 Farming requires Cooking Pot to have full access to plant-based foods.
 
