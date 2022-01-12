@@ -37,3 +37,5 @@ Version 2.0: "Gave up on semantic versioning cus I really couldn't care enough. 
 Version 2.1: "Added a few more mods, added translation controls to the installer"
 
 Version 2.2: "Fixed the installer breaking when using Install IL Mods"
+
+Version 2.3: "Removed some unnecessary code, gains ~10fps on max quality. Still haven't fixed saving because that's spooky stuff"
